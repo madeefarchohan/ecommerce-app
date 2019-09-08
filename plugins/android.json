@@ -1,0 +1,77 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-themeablebrowser": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "call-number": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "1953977531335518",
+      "APP_NAME": "Fashaish",
+      "FACEBOOK_ANDROID_SDK_VERSION": "4.38.1",
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-clipboard": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.vectorcoder.fashaish"
+    }
+  }
+}

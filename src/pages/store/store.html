@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"Store"|translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <!-- <img src="{{store.banner}}" *ngIf="store.banner!=false"> -->
+  <ion-list class="list-avatar" padding>
+    <ion-item text-center>
+      <!-- <ion-avatar>
+        <img src="{{store.gravatar}}">
+      </ion-avatar> -->
+      <h2>{{store.store_name}}</h2>
+      <p>
+        <ion-icon name="star-outline"></ion-icon>&nbsp;&nbsp;{{store.rating.rating}}
+      </p>
+      <!-- <p>{{store.email}}</p> -->
+      <!-- <button ion-button color="light" (click)="contactUs()">
+        {{'Contact Us' | translate }}
+      </button> -->
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-col *ngFor="let p of products" col-6>
+      <product [data]="p" [type]="'normal'"></product>
+    </ion-col>
+  </ion-grid>
+  <ion-infinite-scroll #infinite (ionInfinite)="getProducts()">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <!-- <ion-fab right bottom>
+    <button ion-fab color="secondary">
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab *ngIf="store.fb">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.twitter">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.pinterest">
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.youtube">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.gplus">
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.linkedin">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.instagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button>
+      <button ion-fab *ngIf="store.flickr">{{'Flickr'|translate}}
+      </button>
+    </ion-fab-list>
+  </ion-fab> -->
+
+</ion-content>

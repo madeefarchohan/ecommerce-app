@@ -1,0 +1,70 @@
+page-home3{
+    .page-home3{
+		
+		.modules{
+			padding-left:5px;
+			padding-right:5px;
+		}
+        .module{
+			
+            h3{
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-size: 1.8rem;
+				
+				small{
+					float:right;
+					color:color($colors, secondary);
+				}
+            }
+            .slides{
+
+                .swiper-slide{
+					padding-left:5px;
+					padding-right:5px;
+					
+                    .slide-zoom{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: initial;
+                        product{
+                            display: block;
+                        }
+                    }
+                }
+                .swiper-slide-last{
+                    padding-top: 15%;
+                    
+                    .slide-zoom{
+ 
+
+                        .card{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: calc(100% - 0px);
+                            margin-right: 0 !important;
+                            margin-left: 0 !important;
+                            margin-top: 0 !important;
+                            margin-bottom: 0 !important;
+                            box-shadow: none;
+							
+							.card-content{
+								text-align:center;
+								.icon{
+									color: color($colors, accent-color);
+									font-size:50px;
+								}
+							}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .animate-product {
+        animation: bounceInRight 0.75s;
+    }
+}

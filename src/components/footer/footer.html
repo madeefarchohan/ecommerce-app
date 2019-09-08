@@ -1,0 +1,47 @@
+<ion-toolbar color="light">
+  <ion-segment [(ngModel)]="segments" *ngIf="config.defaultIcons">
+    <ion-segment-button value="HomePage" (click)="openPage('HomePage')">
+      <ion-icon name="home"></ion-icon>
+      <div class="footer-title">{{ 'Home' | translate }}</div>
+    </ion-segment-button>
+    <ion-segment-button value="CategoriesPage" (click)="openPage('CategoriesPage')">
+      <ion-icon name="apps"></ion-icon>
+      <div class="footer-title">{{ 'Categories' | translate }}</div>
+    </ion-segment-button><!-- {{ 'Categories' | translate }} -->
+    <ion-segment-button value="ProductsPage" (click)="openPage('ProductsPage')">
+      <ion-icon name="cash"></ion-icon>
+      <div class="footer-title">{{ 'Shop' | translate }}</div>
+    </ion-segment-button><!-- {{ 'Shop' | translate }} -->
+    <ion-segment-button value="NewsPage" (click)="openPage('NewsPage')" *ngIf="shared.customerData.id!=null && config.myOrdersPage==1">
+      <ion-icon name="cart"></ion-icon>
+      <div class="footer-title">{{ 'Orders' | translate }}</div>
+    </ion-segment-button>
+    <ion-segment-button value="SettingsPage" (click)="openPage('SettingsPage')">
+      <ion-icon name="call"></ion-icon>
+      <div class="footer-title">{{ 'Help' | translate }}</div>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-segment [(ngModel)]="segments" *ngIf="!config.defaultIcons">
+    <ion-segment-button value="HomePage" (click)="openPage('HomePage')">
+      <ion-icon><img src="assets/left-menu-icon/home.png"></ion-icon>
+      <div class="footer-title">{{ 'Home' | translate }}</div>
+    </ion-segment-button>
+    <ion-segment-button value="CategoriesPage" (click)="openPage('CategoriesPage')">
+      <ion-icon><img src="assets/left-menu-icon/category.png"></ion-icon>
+      <div class="footer-title">{{ 'Categories' | translate }}</div>
+    </ion-segment-button><!-- {{ 'Categories' | translate }} -->
+    <ion-segment-button value="ProductsPage" (click)="openPage('ProductsPage')">
+      <ion-icon><img src="assets/left-menu-icon/shop.png"></ion-icon>
+      <div class="footer-title">{{ 'Shop' | translate }}</div>
+    </ion-segment-button><!-- {{ 'Shop' | translate }} -->
+    <ion-segment-button value="NewsPage" (click)="openPage('NewsPage')" *ngIf="shared.customerData.id!=null && config.myOrdersPage==1">
+      <ion-icon><img src="assets/left-menu-icon/orders.png"></ion-icon>
+      <div class="footer-title">{{ 'Orders' | translate }}</div>
+    </ion-segment-button>
+    <ion-segment-button value="SettingsPage" (click)="openPage('SettingsPage')">
+      <ion-icon><img src="assets/left-menu-icon/phone.png"></ion-icon>
+      <div class="footer-title">{{ 'Help' | translate }}</div>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
